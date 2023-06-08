@@ -12,7 +12,7 @@ const Card = ({ id, image, title, year }: CardType) => {
       )}
       <div className='absolute left-0 top-0 h-full w-full z-0 bg-overlay backdrop-brightness-50 group-hover:backdrop-brightness-75 ease-in duration-300'></div>
 
-      <div className='absolute left-4 bottom-4 font-semibold'>
+      <div className='absolute left-2 bottom-2 md:left-4 md:bottom-4 text-sm md:text-base font-semibold'>
         <span className='card__info__title'>{title}</span> - <span className='card__info__year'>{year}</span>
       </div>
       <Link to={`/movies/${id}`}>
